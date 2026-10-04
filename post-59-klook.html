@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <title>Klook Travel Activities: Is Booking Through Klook Worth It? &mdash; Findhawk</title>
 <meta name="description" content="Planning the fun part of a trip — the theme parks, the day tours, the viewpoint tickets, the airport transfers — used to mean juggling a dozen different operato">
 <link rel="canonical" href="https://findhawkhq.github.io/post-59-klook.html">
 <meta property="og:site_name" content="Findhawk">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Klook Travel Activities: Is Booking Through Klook Worth It?">
 <meta property="og:description" content="Planning the fun part of a trip — the theme parks, the day tours, the viewpoint tickets, the airport transfers — used to mean juggling a dozen different operato">
@@ -15,93 +19,209 @@
 <meta name="twitter:card" content="summary_large_image">
 <style>
 :root{
-  --ink:#2b3542; --muted:#68768a; --bg:#faf8f2; --card:#ffffff;
-  --navy:#1b2f4b; --navy2:#101f36; --accent:#e0952f; --accent-d:#b96f16;
-  --line:#ece4d4; --radius:14px;
+  --ink:#232d3d; --muted:#66748a; --faint:#8b96a9;
+  --bg:#faf8f2; --card:#ffffff; --paper:#f4efe3;
+  --navy:#14263f; --navy2:#0c1728; --gold:#d98e1e; --gold-d:#a86a0e; --gold-soft:#fbf3df;
+  --line:#e9e0cd; --line-soft:#f0e9d8;
+  --radius:16px;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  line-height:1.75;font-size:17px}
-h1,h2,h3{font-family:Georgia,"Times New Roman",serif;letter-spacing:.2px}
-a{color:#1d5fa8;text-decoration:none}
+  font-family:var(--sans);line-height:1.8;font-size:17px;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2,h3{font-family:var(--serif);letter-spacing:-.01em;line-height:1.25}
+a{color:#175cd3;text-decoration:none}
 a:hover{text-decoration:underline}
-.wrap{max-width:1060px;margin:0 auto;padding:0 1.2rem}
-header.site{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:.9rem 0}
+.wrap{max-width:1140px;margin:0 auto;padding:0 1.5rem}
+/* ---------- header ---------- */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:60;
+  background:linear-gradient(90deg,var(--gold),#f2b64f)}
+header.site{position:sticky;top:0;z-index:50;background:rgba(12,23,40,.92);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(217,142,30,.25);padding:.8rem 0}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:.65rem;color:#fff!important;font-size:1.45rem;font-weight:800;letter-spacing:.3px}
+.brand{display:flex;align-items:center;gap:.7rem;color:#fff!important;font-size:1.4rem;font-weight:800;letter-spacing:-.01em}
 .brand:hover{text-decoration:none}
 .brand svg{flex:none}
-.brand em{display:block;font-style:normal;font-weight:400;font-size:.72rem;color:#c8d4e4;letter-spacing:.4px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-nav.site{display:flex;gap:1.3rem}
-nav.site a{color:#dbe4f0;font-size:.95rem;font-weight:500}
-nav.site a:hover{color:var(--accent);text-decoration:none}
-main{max-width:1060px;margin:0 auto;padding:2rem 1.2rem 3rem}
+.brand em{display:block;font-style:normal;font-weight:500;font-size:.68rem;color:#b9c6da;letter-spacing:1.6px;text-transform:uppercase;font-family:var(--sans);margin-top:2px}
+nav.site{display:flex;gap:1.6rem}
+nav.site a{color:#d7e0ee;font-size:.92rem;font-weight:500;letter-spacing:.02em;position:relative;padding:.2rem 0}
+nav.site a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);transition:width .25s ease}
+nav.site a:hover{color:#fff;text-decoration:none}
+nav.site a:hover::after{width:100%}
+/* ---------- layout ---------- */
+main{max-width:1140px;margin:0 auto;padding:2.5rem 1.5rem 4rem}
 main.article-main{max-width:780px}
-article{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:2.2rem;box-shadow:0 2px 10px rgba(27,47,75,.06)}
-article h1{font-size:1.8rem;line-height:1.3;margin:0 0 .4rem;color:var(--navy)}
-.meta{color:var(--muted);font-size:.85rem;margin-bottom:1.2rem}
-article h2{font-size:1.35rem;color:var(--navy);margin-top:2.1rem;border-bottom:2px solid var(--line);padding-bottom:.3rem}
-article h3{font-size:1.12rem;color:#274264;margin-top:1.6rem}
-article img{max-width:100%;height:auto;border-radius:8px}
-article p{margin:1rem 0}
-article a[href^="/go/"]{display:inline-block;background:var(--accent);color:#fff!important;font-weight:700;
-  padding:.75rem 1.6rem;border-radius:999px;margin:.5rem .4rem .5rem 0;box-shadow:0 2px 6px rgba(224,149,47,.35);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-article a[href^="/go/"]:hover{background:var(--accent-d);text-decoration:none;box-shadow:0 3px 10px rgba(224,149,47,.45)}
-article a[href^="/go/"]::after{content:" 92"}
-table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.92rem;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:.55rem .7rem;text-align:left}
-th{background:#f3ecdd;color:var(--navy)}
-tr:nth-child(even) td{background:#fdfaf4}
-blockquote{border-left:4px solid var(--accent);margin:1.2rem 0;padding:.6rem 1rem;background:#fdf6e9;color:#4a4136;border-radius:0 8px 8px 0}
-hr{border:none;border-top:1px solid var(--line);margin:2rem 0}
-.hero{background:linear-gradient(150deg,#fffdf8,#fdf3e0);border:1px solid var(--line);border-radius:18px;
-  padding:2.4rem 2rem;margin-bottom:2.2rem;box-shadow:0 2px 10px rgba(27,47,75,.05)}
-.hero-eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent-d);margin-bottom:.6rem}
-.hero h2{margin:0 0 .5rem;color:var(--navy);font-size:2rem;border:none;padding:0;line-height:1.25}
-.hero p{margin:.4rem 0 1.2rem;color:#4c5a6e;font-size:1.05rem;max-width:640px}
-.hero-cta{display:flex;gap:.8rem;flex-wrap:wrap}
-.hero-cta a{display:inline-block;background:var(--navy);color:#fff!important;font-weight:600;padding:.7rem 1.5rem;border-radius:999px;font-size:.95rem}
-.hero-cta a:hover{background:var(--accent-d);text-decoration:none}
-.hero-cta a.ghost{background:transparent;color:var(--navy)!important;border:2px solid var(--navy)}
-.hero-cta a.ghost:hover{border-color:var(--accent-d);color:var(--accent-d)!important}
-.section-title{font-size:1.5rem;color:var(--navy);margin:2.2rem 0 1rem;display:flex;align-items:center;gap:.6rem}
-.section-title::after{content:"";flex:1;height:1px;background:var(--line)}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.1rem}
-.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
-  padding:1.3rem 1.4rem;box-shadow:0 1px 4px rgba(27,47,75,.05);transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
-.card:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 6px 18px rgba(27,47,75,.12);border-color:var(--accent)}
-.card-kicker{font-size:.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent-d);margin-bottom:.4rem}
-.card-title{font-family:Georgia,"Times New Roman",serif;font-size:1.12rem;font-weight:700;color:var(--navy);line-height:1.4;margin-bottom:.4rem}
-.card-ex{font-size:.9rem;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.aff-notice{background:#fffbe6;border:1px solid #e6d98a;border-radius:10px;padding:.75rem 1.1rem;
-  font-size:.9em;color:#5a4a00;margin:.9rem 0 1.2rem}
+/* ---------- article ---------- */
+.crumbs{font-size:.82rem;color:var(--faint);margin-bottom:1.1rem;letter-spacing:.02em}
+.crumbs a{color:var(--muted)}
+.crumbs span{margin:0 .45rem;color:#c9bfa8}
+article{background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:3rem 3.2rem;box-shadow:0 4px 24px rgba(20,38,63,.07)}
+article h1{font-size:2.5rem;font-weight:600;margin:0 0 .7rem;color:var(--navy);letter-spacing:-.02em;line-height:1.15}
+.meta{display:flex;align-items:center;gap:.7rem;color:var(--muted);font-size:.88rem;margin-bottom:1.6rem;flex-wrap:wrap}
+.meta .dot{width:4px;height:4px;border-radius:50%;background:#c9bfa8}
+.meta .byline{font-weight:600;color:#43506a}
+article h2{font-size:1.65rem;font-weight:600;color:var(--navy);margin:2.6rem 0 1rem;letter-spacing:-.015em}
+article h3{font-size:1.2rem;color:#2a3a55;margin:2rem 0 .7rem}
+article img{max-width:100%;height:auto;border-radius:10px}
+article p{margin:1.1rem 0}
+.article-body>p:first-of-type::first-letter{font-family:var(--serif);font-weight:700;
+  font-size:3.4em;float:left;line-height:.85;margin:.06em .12em 0 0;color:var(--navy)}
+article a[href^="/go/"]{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,#e8a13a,#cf8318);
+  color:#fff!important;font-weight:700;padding:.85rem 1.9rem;border-radius:999px;margin:.6rem .5rem .6rem 0;
+  box-shadow:0 4px 14px rgba(217,142,30,.35);transition:transform .15s ease,box-shadow .15s ease}
+article a[href^="/go/"]:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 8px 22px rgba(217,142,30,.45)}
+article a[href^="/go/"]::after{content:"92"}
+table{border-collapse:collapse;width:100%;margin:1.4rem 0;font-size:.93rem;display:block;overflow-x:auto;
+  border:1px solid var(--line);border-radius:12px}
+th,td{border:none;border-bottom:1px solid var(--line-soft);padding:.7rem .9rem;text-align:left}
+th{background:var(--navy);color:#fff;font-weight:600;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even) td{background:#fdfaf3}
+blockquote{border-left:3px solid var(--gold);margin:1.8rem 0;padding:.4rem 0 .4rem 1.4rem;
+  font-family:var(--serif);font-size:1.25rem;line-height:1.6;color:var(--navy);font-style:italic}
+hr{border:none;border-top:1px solid var(--line);margin:2.4rem 0}
+/* guide hero */
+.guide-hero{width:100%;height:auto;border-radius:14px;margin:.6rem 0 1.6rem;box-shadow:0 6px 24px rgba(20,38,63,.12)}
+/* toc */
+.toc{background:var(--gold-soft);border:1px solid #eed9a8;border-radius:14px;padding:1.2rem 1.5rem;margin:0 0 2rem}
+.toc strong{font-family:var(--serif);color:var(--navy);font-size:1.02rem;letter-spacing:.02em}
+.toc ul{margin:.7rem 0 0;padding:0;list-style:none;columns:2;column-gap:2rem}
+.toc li{margin:.35rem 0;font-size:.9rem;break-inside:avoid}
+.toc a{color:#4a5a75;font-weight:500}
+.toc a:hover{color:var(--gold-d)}
+/* author box */
+.author-box{display:flex;gap:1.1rem;align-items:flex-start;background:var(--paper);
+  border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.5rem;margin:2.6rem 0 0}
+.author-box .mark{flex:none;width:52px;height:52px;border-radius:50%;background:var(--navy2);
+  display:flex;align-items:center;justify-content:center}
+.author-box strong{font-family:var(--serif);font-size:1.05rem;color:var(--navy)}
+.author-box p{margin:.3rem 0 0;font-size:.9rem;color:var(--muted);line-height:1.65}
+/* keep reading */
+.keep-reading{margin-top:2.6rem}
+.keep-reading>h2{font-size:1.5rem;margin-bottom:1.1rem}
+.kr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.kr-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);
+  border-radius:14px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
+.kr-card:hover{text-decoration:none;transform:translateY(-3px);box-shadow:0 10px 26px rgba(20,38,63,.12)}
+.kr-card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.kr-card span.t{font-family:var(--serif);font-weight:600;font-size:.98rem;line-height:1.4;color:var(--navy);padding:.9rem 1.1rem 1.1rem}
+/* disclosure + badges */
+.aff-notice{background:#fffbe6;border:1px solid #e6d98a;border-radius:12px;padding:.85rem 1.2rem;
+  font-size:.9em;color:#5a4a00;margin:1rem 0 1.4rem;line-height:1.65}
 .aff-notice a{color:#5a4a00;text-decoration:underline}
-.prod-img{display:block;margin:1.2rem auto;max-width:520px}
-.prod-img img{max-width:100%;height:auto;border-radius:12px;box-shadow:0 3px 12px rgba(27,47,75,.14)}
-.guide-hero{width:100%;height:auto;border-radius:12px;margin:.4rem 0 1.2rem;box-shadow:0 3px 12px rgba(27,47,75,.10)}
-.card-thumb{display:block;margin:-1.3rem -1.4rem 1rem;border-radius:14px 14px 0 0;overflow:hidden;aspect-ratio:16/9;background:#f0e9d8}
-.card-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.toc{background:#fdf6e9;border:1px solid var(--line);border-radius:10px;padding:.9rem 1.2rem;margin:0 0 1.4rem}
-.toc strong{color:var(--navy);font-size:.95rem}
-.toc ul{margin:.5rem 0 0;padding-left:1.2rem}
-.toc li{margin:.25rem 0;font-size:.93rem}
-.keep-reading{margin-top:2.2rem;border-top:2px solid var(--line);padding-top:1.2rem}
-.keep-reading h2{border:none!important;margin-top:0!important;padding-bottom:0!important}
-.keep-reading ul{list-style:none;padding:0;margin:.6rem 0 0}
-.keep-reading li{margin:.45rem 0}
-.keep-reading a{font-weight:600}
-.pick-badge{display:inline-block;background:linear-gradient(135deg,#e0952f,#c77f1a);color:#fff;font-weight:800;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;padding:.35rem 1rem;border-radius:999px;margin-bottom:.6rem;box-shadow:0 2px 6px rgba(224,149,47,.4)}
-footer.site{background:var(--navy2);color:#9fb0c6;text-align:center;padding:2rem 1rem;font-size:.88rem;margin-top:2.5rem}
-footer.site a{color:#cdd8e8;margin:0 .6rem}
-footer.site .tag{color:#7e8fa8;font-size:.8rem;margin-top:.5rem}
+.pick-badge{display:inline-block;background:linear-gradient(135deg,#e8a13a,#c77f1a);color:#fff;font-weight:800;
+  font-size:.78rem;letter-spacing:1.4px;text-transform:uppercase;padding:.4rem 1.1rem;border-radius:999px;
+  margin-bottom:.8rem;box-shadow:0 3px 8px rgba(217,142,30,.4)}
+.prod-img{display:block;margin:1.6rem auto;max-width:520px}
+.prod-img img{max-width:100%;height:auto;border-radius:14px;box-shadow:0 6px 20px rgba(20,38,63,.14)}
+/* ---------- homepage ---------- */
+.hero{position:relative;overflow:hidden;background:linear-gradient(150deg,#0e1c33 0%,#16294a 60%,#1d3a63 100%);
+  border-radius:24px;padding:4rem 3.5rem;margin-bottom:3rem;color:#fff;
+  box-shadow:0 12px 40px rgba(12,23,40,.25)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.5;
+  background:radial-gradient(600px 300px at 85% 10%,rgba(217,142,30,.35),transparent 60%)}
+.hero>*{position:relative}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;color:#f2c572;margin-bottom:1rem}
+.hero-eyebrow::before{content:"";width:26px;height:2px;background:var(--gold);display:inline-block}
+.hero h2{margin:0 0 1rem;color:#fff;font-size:3rem;font-weight:600;letter-spacing:-.025em;line-height:1.08;max-width:640px}
+.hero p{margin:0 0 2rem;color:#c3cfe2;font-size:1.12rem;max-width:620px;line-height:1.7}
+.hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:2.4rem}
+.hero-cta a{display:inline-block;background:linear-gradient(135deg,#e8a13a,#cf8318);color:#fff!important;
+  font-weight:700;padding:.85rem 2rem;border-radius:999px;font-size:.98rem;
+  box-shadow:0 6px 18px rgba(217,142,30,.4);transition:transform .15s ease,box-shadow .15s ease}
+.hero-cta a:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 10px 26px rgba(217,142,30,.5)}
+.hero-cta a.ghost{background:rgba(255,255,255,.08);color:#fff!important;border:1px solid rgba(255,255,255,.3);box-shadow:none}
+.hero-cta a.ghost:hover{border-color:var(--gold);color:#f2c572!important;transform:translateY(-2px)}
+.hero-stats{display:flex;gap:2.6rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:1.6rem}
+.hero-stats div strong{display:block;font-family:var(--serif);font-size:1.7rem;color:#fff;letter-spacing:-.01em}
+.hero-stats div span{font-size:.8rem;color:#a9b8d0;letter-spacing:.08em;text-transform:uppercase}
+/* featured */
+.featured{display:grid;grid-template-columns:1.15fr 1fr;background:var(--card);border:1px solid var(--line);
+  border-radius:20px;overflow:hidden;margin-bottom:3rem;box-shadow:0 6px 26px rgba(20,38,63,.08);
+  transition:box-shadow .2s ease}
+.featured:hover{box-shadow:0 12px 40px rgba(20,38,63,.14)}
+.featured .f-img{overflow:hidden;min-height:320px}
+.featured .f-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.featured:hover .f-img img{transform:scale(1.04)}
+.featured .f-body{padding:2.6rem 2.8rem;display:flex;flex-direction:column;justify-content:center}
+.featured .f-kicker{font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-d);margin-bottom:.7rem}
+.featured h3{font-size:1.9rem;margin:0 0 .9rem;color:var(--navy);font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.featured h3 a{color:var(--navy)}
+.featured h3 a:hover{color:var(--gold-d);text-decoration:none}
+.featured p{color:var(--muted);font-size:1rem;line-height:1.7;margin:0 0 1.4rem}
+.featured .f-link{font-weight:700;color:var(--gold-d);font-size:.95rem}
+.featured .f-link:hover{color:var(--navy)}
+/* sections */
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin:3rem 0 1.4rem}
+.section-title{font-size:1.9rem;color:var(--navy);margin:0;font-weight:600;letter-spacing:-.02em}
+.section-sub{color:var(--muted);font-size:.95rem;margin:.2rem 0 0}
+/* cards */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.4rem}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;
+  overflow:hidden;box-shadow:0 2px 8px rgba(20,38,63,.05);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.card:hover{text-decoration:none;transform:translateY(-5px);box-shadow:0 16px 36px rgba(20,38,63,.13);border-color:#dcc99a}
+.card-thumb{display:block;overflow:hidden;aspect-ratio:16/9;background:var(--paper)}
+.card-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.card-thumb img.prod-logo{object-fit:contain;padding:1.4rem;background:#fff}
+.card:hover .card-thumb img{transform:scale(1.06)}
+.card-body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;flex:1}
+.card-kicker{font-size:.7rem;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold-d);margin-bottom:.55rem}
+.card-title{font-family:var(--serif);font-size:1.22rem;font-weight:600;color:var(--navy);line-height:1.35;margin-bottom:.55rem;letter-spacing:-.01em}
+.card:hover .card-title{color:#0c1728}
+.card-ex{font-size:.92rem;color:var(--muted);line-height:1.65;display:-webkit-box;-webkit-line-clamp:3;
+  -webkit-box-orient:vertical;overflow:hidden;margin-bottom:1rem;flex:1}
+.card-meta{display:flex;align-items:center;gap:.6rem;font-size:.78rem;color:var(--faint);letter-spacing:.03em}
+.card-meta .dot{width:3px;height:3px;border-radius:50%;background:#d3c9ae}
+/* trust strip */
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:3.2rem 0 0}
+.trust div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.7rem 1.6rem}
+.trust strong{display:block;font-family:var(--serif);font-size:1.08rem;color:var(--navy);margin-bottom:.4rem}
+.trust p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.65}
+/* buttons */
+.btn{display:inline-block;background:linear-gradient(135deg,#e8a13a,#c77f1a);color:#fff!important;font-weight:700;
+  padding:.85rem 2rem;border-radius:999px;font-size:1rem;box-shadow:0 4px 14px rgba(217,142,30,.4)}
+.btn:hover{text-decoration:none;filter:brightness(1.06)}
+/* ---------- footer ---------- */
+footer.site{background:var(--navy2);color:#93a3bb;margin-top:4rem;padding:3.5rem 0 0;font-size:.92rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;max-width:1140px;margin:0 auto;padding:0 1.5rem 2.5rem}
+.foot-brand{color:#fff;font-size:1.25rem;font-weight:800;display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem}
+.foot-grid p{margin:.4rem 0;line-height:1.7;color:#93a3bb;font-size:.9rem}
+.foot-grid h4{color:#fff;font-size:.78rem;letter-spacing:1.6px;text-transform:uppercase;margin:0 0 1rem;font-family:var(--sans)}
+.foot-grid ul{list-style:none;margin:0;padding:0}
+.foot-grid li{margin:.55rem 0}
+.foot-grid a{color:#b9c6da}
+.foot-grid a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding:1.3rem 1.5rem;text-align:center;
+  font-size:.82rem;color:#6e7f99;max-width:1140px;margin:0 auto}
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .featured{grid-template-columns:1fr}
+  .featured .f-img{min-height:220px;max-height:280px}
+  .trust{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:1.8rem}
+  .toc ul{columns:1}
+}
 @media (max-width:640px){
   body{font-size:16px}
-  article{padding:1.3rem}
-  .hero{padding:1.6rem 1.2rem}
-  .hero h2{font-size:1.55rem}
+  main{padding:1.4rem 1rem 2.5rem}
+  article{padding:1.6rem 1.3rem;border-radius:16px}
+  article h1{font-size:1.9rem}
+  .hero{padding:2.6rem 1.6rem;border-radius:18px}
+  .hero h2{font-size:2.1rem}
+  .hero-stats{gap:1.4rem}
+  .featured .f-body{padding:1.8rem 1.5rem}
+  .featured h3{font-size:1.45rem}
   header.site .wrap{justify-content:center;text-align:center}
-  nav.site{width:100%;justify-content:center}
+  nav.site{width:100%;justify-content:center;gap:.9rem;flex-wrap:wrap}
+  nav.site a{font-size:.85rem;white-space:nowrap}
+  .kr-grid{grid-template-columns:1fr}
 }
 </style>
 <!-- Travelpayouts Drive verification -->
@@ -122,6 +242,12 @@ footer.site .tag{color:#7e8fa8;font-size:.8rem;margin-top:.5rem}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://findhawkhq.github.io/"},{"@type":"ListItem","position":2,"name":"Klook Travel Activities: Is Booking Through Klook Worth It?","item":"https://findhawkhq.github.io/post-59-klook.html"}]}</script>
 </head>
 <body>
+<div class="progress" id="readprogress"></div>
+<script>
+window.addEventListener('scroll',function(){var h=document.documentElement;
+var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;
+var b=document.getElementById('readprogress');if(b)b.style.width=p+'%';},{passive:true});
+</script>
 <header class="site">
   <div class="wrap">
     <a class="brand" href="index.html"><svg viewBox="0 0 36 36" width="32" height="32" aria-hidden="true"><path d="M3 18C9 9.5 14 7 18 7c4 0 9 2.5 15 11-6 8.5-11 11-15 11-4 0-9-2.5-15-11Z" fill="none" stroke="#e0952f" stroke-width="2.6" stroke-linejoin="round"/><circle cx="18" cy="18" r="5.5" fill="#e0952f"/><circle cx="18" cy="18" r="2.2" fill="#101f36"/></svg><span>Findhawk<em>Sharp-eyed honest product finds</em></span></a>
@@ -135,9 +261,11 @@ footer.site .tag{color:#7e8fa8;font-size:.8rem;margin-top:.5rem}
 </header>
 <main class="article-main">
 <article>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><a href="index.html#finds">Product finds</a><span>/</span>Klook Travel Activities: Is Booking Through Klook Worth It?</nav>
 <h1>Klook Travel Activities: Is Booking Through Klook Worth It?</h1>
-<div class="meta">By the Findhawk Research Team &middot; 2026-11-01</div>
+<div class="meta"><span class="byline">By the Findhawk Research Team</span><span class="dot"></span>Nov 1, 2026<span class="dot"></span>5 min read</div>
 <p class="aff-notice"><em>Findhawk is reader-supported. When you buy through links on this page, we may earn an affiliate commission at no extra cost to you. <a href="disclosure.html">Learn more</a>.</em></p>
+<div class="article-body">
 <nav class="toc" aria-label="Table of contents"><strong>On this page</strong><ul><li><a href="#what-klook-actually-is">What Klook Actually Is</a></li><li><a href="#who-it-rsquo-s-for-and-who-should-skip-it">Who It’s For — and Who Should Skip It</a></li><li><a href="#key-features-worth-knowing">Key Features Worth Knowing</a></li><li><a href="#price-and-value">Price and Value</a></li><li><a href="#the-bottom-line">The Bottom Line</a></li></ul></nav>
 <p>Planning the fun part of a trip — the theme parks, the day tours, the viewpoint tickets, the airport transfers — used to mean juggling a dozen different operator websites, each with its own booking form, its own payment quirks, and its own confirmation process. It&rsquo;s the least enjoyable part of trip planning, and it&rsquo;s exactly the problem Klook was built to solve.</p>
 <p><a href="/go/klook">Search activities and tickets on Klook →</a></p>
@@ -172,16 +300,37 @@ footer.site .tag{color:#7e8fa8;font-size:.8rem;margin-top:.5rem}
 <p>Klook is a legitimate, well-reviewed travel marketplace — roughly 4.7 stars on the App Store, years of reliable operation, and genuinely useful in its stronghold of Asia. For travelers heading to Japan, Korea, Southeast Asia, or Hong Kong, it&rsquo;s one of the first places to check for attraction tickets and tours: competitive prices, instant mobile vouchers, and real convenience. Outside Asia, it&rsquo;s worth a comparison but not a default.</p>
 <p><a href="/go/klook">Check the current price →</a></p>
 <p><em>Findhawk is reader-supported — if you buy through our links, we may earn a commission at no extra cost to you.</em></p>
-<aside class="keep-reading"><h2>Keep reading</h2><ul><li><a href="post-39-touchbeauty.html">TouchBeauty Sonic Facial Brush: Worth It? An Honest Look</a></li><li><a href="post-40-alphabiolabs.html">AlphaBiolabs DNA Test Kits: An Honest Review of Their Home Testing</a></li><li><a href="post-41-minteefy.html">Minteefy Glass Wall Art: Is Printed Glass Worth It? An Honest Look</a></li></ul></aside>
+</div>
+<aside class="author-box"><span class="mark"><svg viewBox="0 0 36 36" width="30" height="30" aria-hidden="true"><path d="M3 18C9 9.5 14 7 18 7c4 0 9 2.5 15 11-6 8.5-11 11-15 11-4 0-9-2.5-15-11Z" fill="none" stroke="#e0952f" stroke-width="2.6" stroke-linejoin="round"/><circle cx="18" cy="18" r="5.5" fill="#e0952f"/><circle cx="18" cy="18" r="2.2" fill="#101f36"/></svg></span><div><strong>The Findhawk Research Team</strong><p>We read the fine print so you don’t have to. Every guide is researched from official brand sources and independent reviews — no sponsored picks, no invented test results, no marketing fluff.</p></div></aside>
+<aside class="keep-reading"><h2>Keep reading</h2><div class="kr-grid"><a class="kr-card" href="post-39-touchbeauty.html"><img src="images/products/post-39-touchbeauty.jpg" alt="TouchBeauty multi-therapy beauty device with LED light, EMS and heat therapy" loading="lazy"><span class="t">TouchBeauty Sonic Facial Brush: Worth It? An Honest Look</span></a><a class="kr-card" href="post-40-alphabiolabs.html"><img src="images/products/post-40-alphabiolabs.jpg" alt="AlphaBiolabs paternity DNA test kit" loading="lazy"><span class="t">AlphaBiolabs DNA Test Kits: An Honest Review of Their Home Testing</span></a><a class="kr-card" href="post-41-minteefy.html"><img src="images/products/post-41-minteefy.png" alt="Minteefy" loading="lazy" class="prod-logo"><span class="t">Minteefy Glass Wall Art: Is Printed Glass Worth It? An Honest Look</span></a></div></aside>
 </article>
 </main>
 <footer class="site">
-  <a href="index.html">Home</a> &middot;
-  <a href="about.html">About</a> &middot;
-  <a href="how-we-test.html">How We Test</a> &middot;
-  <a href="disclosure.html">Affiliate Disclosure</a>
-  <p>&copy; 2026 Findhawk. All rights reserved.</p>
-  <p class="tag">Independent and reader-supported — we may earn a commission when you buy through our links.</p>
+  <div class="foot-grid">
+    <div>
+      <div class="foot-brand"><svg viewBox="0 0 36 36" width="28" height="28" aria-hidden="true"><path d="M3 18C9 9.5 14 7 18 7c4 0 9 2.5 15 11-6 8.5-11 11-15 11-4 0-9-2.5-15-11Z" fill="none" stroke="#e0952f" stroke-width="2.6" stroke-linejoin="round"/><circle cx="18" cy="18" r="5.5" fill="#e0952f"/><circle cx="18" cy="18" r="2.2" fill="#101f36"/></svg>Findhawk</div>
+      <p>Sharp-eyed, honest product finds. Plain-English buying guides with no sponsored picks and no marketing fluff.</p>
+      <p>Independent and reader-supported — we may earn a commission when you buy through our links.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#finds">Product finds</a></li>
+        <li><a href="index.html#guides">Buying guides</a></li>
+        <li><a href="how-we-test.html">How we test</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Trust</h4>
+      <ul>
+        <li><a href="disclosure.html">Affiliate disclosure</a></li>
+        <li><a href="how-we-test.html">Our methodology</a></li>
+        <li><a href="about.html">Editorial standards</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">&copy; 2026 Findhawk. All rights reserved.</div>
 </footer>
 </body>
 </html>
