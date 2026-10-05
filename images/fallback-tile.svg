@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Findhawk">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16294a"/>
+      <stop offset="1" stop-color="#0c1728"/>
+    </linearGradient>
+    <pattern id="dia" width="46" height="46" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="46" height="46" fill="none"/>
+      <path d="M23 4 L42 23 L23 42 L4 23 Z" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dia)"/>
+  <g transform="translate(400,215)">
+    <path d="M-72 0 C-46 -44 -22 -56 0 -56 C22 -56 46 -44 72 0 C46 44 22 56 0 56 C-22 56 -46 44 -72 0 Z"
+          fill="none" stroke="#e0952f" stroke-width="9" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="24" fill="#e0952f"/>
+    <circle cx="0" cy="0" r="9.5" fill="#0c1728"/>
+  </g>
+  <text x="400" y="345" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="44" font-weight="700" letter-spacing="10" fill="#f2ede0">FINDHAWK</text>
+  <text x="400" y="388" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="19" letter-spacing="6" fill="#9aa7bd">SHARP-EYED HONEST FINDS</text>
+</svg>
